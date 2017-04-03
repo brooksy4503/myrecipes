@@ -11,6 +11,7 @@ $navbar-default-bg: #073B15;
   background-image: asset-url('cover_image.jpg');
   background-size: cover;
   height: 350px;
+  margin-bottom: 50px;
 }
 
 #logo {
@@ -58,7 +59,7 @@ $navbar-default-bg: #073B15;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid #eaeaea;
