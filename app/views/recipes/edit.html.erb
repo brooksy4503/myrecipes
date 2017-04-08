@@ -1,3 +1,4 @@
+<div class="container">
 <%= render 'shared/page_title', title: "Edit an existing recipe" %>
 <% if @recipe.errors.any? %>
 <div class="row">
@@ -52,5 +53,6 @@
       [ <%= link_to "Cancel request and return to recipes listing", recipes_path %>]
     </div>
   </div>
+</div>
 </div>
 </div>
