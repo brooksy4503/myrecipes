@@ -4,10 +4,12 @@ class ChefsShowTest < ActionDispatch::IntegrationTest
 
   
     def setup
-    @chef = Chef.create!(chefname: "garth", email: 'brooksy4503@gmail.com',password: "password", password_confirmation: "password")
-      @recipe = Recipe.create(name: "vegetable saute", description: "greate vegetable sautee, add vegetable and oil", chef: @chef)
-  @recipe2 = @chef.recipes.build(name: "chicken saute", description: "great chicken dish")
-    @recipe2.save
+      @chef = Chef.create!(chefname: "garth", email: "brooksy4503@gmail.com", password: "password",
+                          password_confirmation: "password")
+      @recipe = Recipe.create(name: "vegetable saute", description: "greate vegetable sautee, add vegetable and oil",
+                              chef: @chef)
+      @recipe2 = @chef.recipes.build(name: "chicken saute", description: "great chicken dish")
+      @recipe2.save
     end
     
     test "should get chefs show" do

@@ -1,4 +1,3 @@
-<div class="container">
 <%= render 'shared/errors', obj: @chef %>
 <div class="row">
   <div class="col-md-12">
@@ -25,17 +24,17 @@
         <%= f.label :password %>
       </div>
       <div class="col-md-8">
-        <%= f.password_field :password, rows: 10, class: "form-control", placeholder: "Choose a pasword" %>
+        <%= f.password_field :password, rows: 10, class: "form-control", placeholder: "Choose a password" %>
         
       </div>
     </div>
     
         <div class="form-group">
       <div class="control-label col-md-2">
-        <%= f.label :password_conformation, "Confirm Password" %>
+        <%= f.label :password_confirmation, "Confirm Password" %>
       </div>
       <div class="col-md-8">
-        <%= f.password_field :password_confirmation, rows: 10, class: "form-control", placeholder: "Confirm pasword" %>
+        <%= f.password_field :password_confirmation, rows: 10, class: "form-control", placeholder: "Confirm password" %>
         
       </div>
     </div>
@@ -51,5 +50,4 @@
       [ <%= link_to "Cancel request and return to recipes listing", recipes_path %>]
     </div>
   </div>
-</div>
 </div>

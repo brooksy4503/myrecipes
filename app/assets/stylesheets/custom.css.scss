@@ -114,3 +114,14 @@ footer {
 body { 
   padding-bottom: 70px; //to prevent overlap of bottom navbar
 }
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chef-title {
+  color: #073B15;
+  font-weight: bold;
+  font-size: 1.25em;
+}
