@@ -64,9 +64,5 @@ class RecipesTest < ActionDispatch::IntegrationTest
   
   end
    
-  
-  
-  # test "the truth" do
-  #   assert true
-  # end
+
 end
