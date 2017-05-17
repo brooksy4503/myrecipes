@@ -48,7 +48,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
       post recipes_path, params: { recipe: { name: name_of_recipe, description: description_of_recipe}}
     end
     follow_redirect!
-    assert_match name_of_recipe.capitalize, response.body
+    assert_match name_of_recipe.titleize, response.body
     assert_match description_of_recipe, response.body
   
   end
