@@ -1,5 +1,8 @@
 <%= render 'shared/page_title', title: @recipe.name %>
   <div class="well col-md-8 col-md-offset-2">
+    <div align="center">
+    <%= image_tag @recipe.image.url if @recipe.image? %>
+    </div>
     <h4 class="center description"><strong>Steps: </strong></h4>
     <hr />
     <%= simple_format(@recipe.description) %>
@@ -29,8 +32,10 @@
     <% end %>
     <%= link_to "Return to recipes listing", recipes_path, class: "btn btn-xs btn-primary" %>
     </div>
-    <div class="row liking">
-  <div class="row col-md-8 col-md-offset-2">
+  <div class="clearfix"></div>
+  </div>
+<div class="row liking">
+    <div class="col-md-8 col-md-offset-2">
     <%= link_to like_recipe_path(@recipe, like: true), method: :post do %>
       <i class="glyphicon glyphicon-thumbs-up"></i>
       <% end %> <%= @recipe.thumbs_up_total %> ||
@@ -38,10 +43,7 @@
       <i class="glyphicon glyphicon-thumbs-down"></i> 
       <% end %> <%= @recipe.thumbs_down_total %>
   </div>
-  </div>
-  <div class="clearfix"></div>
-  </div>
-  
+  </div>  
   <% if logged_in? %>
       <%= render 'shared/errors', obj: @recipe %>
     <div class="row">

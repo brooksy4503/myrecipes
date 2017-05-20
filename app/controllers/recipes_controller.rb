@@ -71,7 +71,7 @@ end
   end
   
   def recipe_params
-    params.require(:recipe).permit(:name, :description, ingredient_ids: [])
+    params.require(:recipe).permit(:name, :description, :image, ingredient_ids: [])
   end
   
   def require_same_user

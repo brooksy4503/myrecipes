@@ -17,4 +17,6 @@ class Recipe < ApplicationRecord
     self.likes.where(like: false).size
   end
   
+  mount_uploader :image, ImageUploader
+  
 end

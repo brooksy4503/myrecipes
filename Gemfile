@@ -35,6 +35,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
+#Added for image feature
+gem 'carrierwave', '~> 1.1'
+gem 'mini_magick', '~> 4.7'
+gem 'fog', '~> 1.40'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
