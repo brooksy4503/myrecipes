@@ -38,7 +38,7 @@ gem 'bootstrap-will_paginate', '0.0.10'
 #Added for image feature
 gem 'carrierwave', '~> 1.1'
 gem 'mini_magick', '~> 4.7'
-gem 'fog', '~> 1.40'
+gem 'fog-aws', '~> 1.40'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
